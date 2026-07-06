@@ -1,0 +1,6 @@
+{
+  "name": "Chestnut Bakery",
+  "description": "A premium, elegant website for Chestnut Bakery & Café in Riyadh, featuring online ordering, table reservations, artisan menus, and elegant food photography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

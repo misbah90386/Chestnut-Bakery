@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Poppins", system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Lora", Georgia, serif;
+  
+  --color-brand-cream: #FDFBF7;
+  --color-brand-white: #FFFFFF;
+  --color-brand-beige: #E8E2D9;
+  --color-brand-gold: #C5A059;
+  --color-brand-gold-dark: #B48E47;
+  --color-brand-brown-light: #5C483A;
+  --color-brand-brown-medium: #2C1E14;
+  --color-brand-brown-dark: #1C130D;
+  
+  --animate-fade-in-up: fade-in-up 0.5s ease-out;
+  --animate-scroll-down: scroll-down 2s infinite;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-down {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+/* Base Style Fixes */
+html {
+  scroll-behavior: smooth;
+  background-color: #FDFBF7;
+  color: #2C1E14;
+}
+
+/* Custom Selection style for Editorial Theme */
+::selection {
+  background-color: #C5A059;
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar for premium aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2C1E14;
+}
+
+/* Glassmorphism/Refined headers */
+.glass-header {
+  background: rgba(253, 251, 247, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
